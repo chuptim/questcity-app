@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Глобальные фиксы для мобильных устройств */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Запрещаем горизонтальную прокрутку у всех контейнеров */
+.container, 
+.container-fluid {
+  overflow-x: hidden !important;
+}
+
+/* Ограничиваем изображения */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background: linear-gradient(145deg, #f9fafc 0%, #f0f2f8 100%);
